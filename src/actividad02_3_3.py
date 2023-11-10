@@ -4,9 +4,9 @@ def pedirNum(num):
     cont = num
     while cont >= 0:
         if cont != 0:
-            print(cont, end = ",")
+            print(cont, end = ", ")
         else:
-            print(cont)
+            print(f"{cont}" + ".")
         cont = cont -1
         
     if num < 0:
