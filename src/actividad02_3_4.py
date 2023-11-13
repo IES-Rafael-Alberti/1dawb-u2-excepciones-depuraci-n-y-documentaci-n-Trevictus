@@ -3,11 +3,13 @@
 
 def verificarNum(num):
     num = int(input("Introduce un nº entero: "))
-    if num == int:
+    
+    if num :
         print(num, "es el numero entero que has seleccionado.")
-        
+            
     else: 
         print("ERROR")
+    
 
 
 
@@ -16,8 +18,14 @@ def verificarNum(num):
 # A partir de aquí se ejecuta el programa.
 
 def main():
-    num = int
-    verificarNum(num)
+    try:
+        num = int
+        verificarNum(num)
+    except:
+        print("La entrada no es correcta.")
+        raise
+
+
 
 
 if __name__ == "__main__":

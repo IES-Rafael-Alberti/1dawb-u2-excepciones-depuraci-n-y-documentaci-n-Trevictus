@@ -7,7 +7,7 @@ def pedirNum(num):
         
     while cont <= num:
         if (cont == num or cont == num -1) and cont%2 != 0:
-            print(cont, end = "")
+            print(cont, end = ".")
         
         elif cont%2 != 0:
             print(cont, end=", ")

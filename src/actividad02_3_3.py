@@ -16,8 +16,11 @@ def pedirNum(num):
 
 
 def main():
-    num = int(input("Introduce un nº positivo y entero: "))
-    pedirNum(num)
+    try:
+        num = int(input("Introduce un nº positivo y entero: "))
+        pedirNum(num)
+    except:
+        print("Por favor no introduzca una cadena de caracteres.")
 
 
 if __name__ == "__main__":
